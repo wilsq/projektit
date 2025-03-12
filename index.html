@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>List</title>
+  </head>
+  <body>
+    <div class="bodycontainer">
+      <hr />
+      <h2>ShoppingBuddy</h2>
+      <p>Shopping list app - Add items to your list</p>
+
+      <hr />
+      <!-- SHOPPING FORM-->
+      <form id="shoppingForm">
+        <label for="categorySelect">Select a Category:</label>
+        <select name="categorySelect" id="categorySelect" required>
+          <option value="">Select Category</option>
+          <option value="Grocery">Grocery</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Clothes">Clothes</option>
+          <option value="Beauty">Beauty</option>
+        </select>
+        <span>Item: </span>
+        <input
+          type="text"
+          class="selector"
+          placeholder="Add to the shopping list"
+        />
+        <button id="buttonid" type="submit">Add</button>
+        <span id="feedback"></span>
+      </form>
+
+      <ul class="shoppingList"></ul>
+
+      <hr />
+      <!--ITEM COUNTER-->
+      <div class="counterdiv">
+        <p><span id="itemCount">0</span> Items remaining</p>
+        <!-- CLEAR BUTTONS  -->
+        <button id="buttonclearchecked">Remove Selected Items</button>
+        <button id="buttonclear">Clear The List</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(shopping-2615482_1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 900px;
+  padding: 40px;
+  margin: 40px auto;
+  transform: scale(1.3);
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: grey;
+  opacity: 0.6;
+}
+
+li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.counterdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#shoppingForm {
+  display: flex;
+  gap: 10px;
+}
+
+.bodycontainer {
+  width: 650px;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  overflow: hidden;
+}
+
+#feedback {
+  color: red;
+}
+
+#buttonid,
+#buttonclearchecked {
+  background-color: #6d8a96;
+  color: white;
+  border-radius: 4px;
+}
+
+p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#buttonid:hover,
+#buttonclearchecked:hover {
+  background-color: #5a6e77;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background-color: #f0f8ff;
+}
+
+@media (max-width: 768px) {
+  .bodycontainer {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #shoppingForm {
+    flex-direction: column;
+  }
+}
